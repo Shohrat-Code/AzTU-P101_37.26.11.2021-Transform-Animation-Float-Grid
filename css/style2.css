@@ -1,0 +1,93 @@
+/* .wrapper {
+    width: 800px;
+    height: 400px;
+    border: 1px solid;
+    margin: 100px;
+}
+
+.wrapper .item {
+    width: 200px;
+    height: 80px;
+}
+
+.wrapper .first {
+    background-color: blue;
+    float: left;
+}
+
+.wrapper .second {
+    background-color: red;
+    float: left;
+}
+
+.wrapper .third {
+    background-color: green;
+}
+
+.wrapper .forth {
+    background-color: yellow;
+}
+
+.clear-fix {
+    clear: both;
+} */
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px) rotate(45deg);
+        background-color: red;
+        border-radius: 0%;
+    }
+    25% {
+        transform: translate(300px, 0px) rotate(90deg);
+        background-color: green;
+        border-radius: 25%;
+    }
+    50% {
+        transform: translate(300px, 300px) rotate(135deg);
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    75% {
+        transform: translate(0px, 300px) rotate(180deg);
+        background-color: black;
+        border-radius: 25%;
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(225deg);
+        background-color: blueviolet;
+        border-radius: 0%;
+    }
+}
+
+#box {
+    /* transform: translate(10px); */
+    background-color: blue;
+    margin-top: 50px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    animation-name: move;
+    animation-duration: 0.3s;
+    /* animation-delay: 3s; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: backwards; */
+}
+
+#box2 {
+    /* transform: translate(10px); */
+    background-color: black;
+    margin-left: 600px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    animation-name: move;
+    animation-duration: 2s;
+    /* animation-delay: 3s; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: backwards; */
+}
